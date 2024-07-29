@@ -1,8 +1,6 @@
-import React from "react";
 import Card from "../../assets/isocard.svg";
-type Props = {};
 
-const Slogan = (props: Props) => {
+const Slogan = () => {
   return (
     <section className="text-36 my-14 font-extrabold">
       <div className="text-center">

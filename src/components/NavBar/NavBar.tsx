@@ -1,10 +1,7 @@
-import React from "react";
 import { FaBitcoin } from "react-icons/fa";
 import { HiOutlineMenu } from "react-icons/hi";
 
-type Props = {};
-
-const NavBar = (props: Props) => {
+const NavBar = () => {
   return (
     <nav className="flex items-center">
       <div className="flex items-center">

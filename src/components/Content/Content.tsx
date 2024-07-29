@@ -1,10 +1,6 @@
-import React from "react";
-import { FaUser } from "react-icons/fa";
-import { SiCoursera } from "react-icons/si";
 import { contentInfo } from "../../constants";
-type Props = {};
 
-const Content = (props: Props) => {
+const Content = () => {
   return (
     <section>
       <div className="ml-[70px] mr-[54px] rounded-3xl font-bold flex flex-col items-center shadow-md bg-gradient-to-b from-white/40 to-transparent">
