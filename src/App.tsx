@@ -4,7 +4,7 @@ import Slogan from "./components/Slogan/Slogan";
 
 export default function App() {
   return (
-    <h1 className="font-montserrat overflowy-y-auto overflow-x-hidden text-white h-screen px-4 py-8 bg-gradient-to-b from-purple-900 to-purple-700">
+    <h1 className="font-montserrat overflowy-y-auto overflow-x-hidden text-white h-screen px-4 pt-4 pb-8 bg-gradient-to-b from-purple-900 to-purple-700">
       <NavBar />
       <Slogan />
       <Content />
