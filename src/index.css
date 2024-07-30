@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .menu-list {
+       @apply cursor-pointer hover:text-purple-500 transition-all duration-200
+    }
+}
