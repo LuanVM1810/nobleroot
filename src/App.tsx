@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Content from "./components/Content/Content";
-import NavBar from "./components/NavBar/NavBar";
-import Slogan from "./components/Slogan/Slogan";
+import { Route, Routes } from "react-router-dom";
+import LoginPage from "./pages/LoginPage/LoginPage";
+import LandingPage from "./pages/LandingPage/LandingPage";
 
 interface WindowSize {
   width: number | undefined;
@@ -35,10 +35,11 @@ export default function App() {
     }
   }, [windowSize]);
   return (
-    <h1 className="font-montserrat overflowy-y-auto overflow-x-hidden text-white h-screen px-4 pt-2 pb-6 bg-gradient-to-b from-purple-900 to-purple-700">
-      <NavBar isMobile={isMobile} />
-      <Slogan />
-      <Content />
+    <h1 className="font-montserrat overflowy-y-auto overflow-x-hidden text-white h-screen px-4 pt-2 pb-6 bg-gradient-to-b from-purple-900 to-purple-700 md:px-20">
+      <Routes>
+        <Route path="/" element={<LandingPage isMobile={isMobile} />} />
+        <Route path="/signin" element={<LoginPage />} />
+      </Routes>
     </h1>
   );
 }

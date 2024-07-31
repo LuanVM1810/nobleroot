@@ -2,6 +2,7 @@ import { HiOutlineMenu } from "react-icons/hi";
 import NobleRootLogo from "../../assets/NobleRoot (9).png";
 import { useEffect, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 
 type Props = {
   isMobile: boolean;
@@ -43,7 +44,9 @@ const NavBar = ({ isMobile }: Props) => {
             <ul className="lg:flex lg:gap-20 lg:text-16">
               <li className="menu-list">Courses</li>
               <li className="menu-list">Sign up</li>
-              <li className="menu-list">Sign in</li>
+              <NavLink to="signin">
+                <li className="menu-list">Sign in</li>
+              </NavLink>
               <li className="ml-28 menu-list">Contact</li>
             </ul>
           </>
@@ -54,7 +57,9 @@ const NavBar = ({ isMobile }: Props) => {
             <ul>
               <li className="menu-list">Courses</li>
               <li className="menu-list">Sign up</li>
-              <li className="menu-list">Sign in</li>
+              <NavLink to="/signin">
+                <li className="menu-list">Sign in</li>
+              </NavLink>
               <li className="menu-list">Contact</li>
             </ul>
           </div>

@@ -1,9 +1,10 @@
 import { contentInfo } from "../../constants";
+import { FaCheckCircle } from "react-icons/fa";
 
 const Content = () => {
   return (
-    <section>
-      <div className="ml-[70px] mr-[54px] rounded-3xl font-bold flex flex-col items-center shadow-md bg-gradient-to-b from-white/40 to-transparent">
+    <section className="md:flex md:items-start">
+      <div className="ml-[70px] mr-[54px] rounded-3xl font-bold flex flex-col items-center shadow-md bg-gradient-to-b from-white/40 md:w-[25%]">
         {contentInfo.map((item) => (
           <div className="mt-10 flex items-start gap-8">
             <div className="mt-[10px]">{item.icon}</div>
@@ -13,6 +14,20 @@ const Content = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="ml-[70px] my-20 flex flex-col gap-10 md:text-20 md:mt-0 md:ml-[25%] md:justify-start">
+        <div className="flex gap-5 items-center ">
+          <FaCheckCircle size={"24px"} />
+          <p>Bringing useful knowledge</p>
+        </div>
+        <div className="flex gap-5 items-center">
+          <FaCheckCircle size={"24px"} />
+          <p>Improve your income</p>
+        </div>
+        <div className="flex gap-5 items-center">
+          <FaCheckCircle size={"24px"} />
+          <p>Safe, secure, reputable</p>
+        </div>
       </div>
     </section>
   );
