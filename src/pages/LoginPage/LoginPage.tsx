@@ -9,7 +9,7 @@ const LoginPage = () => {
       <NavLink to="/">
         <FaAngleLeft
           size={"24px"}
-          className="block md:hidden mt-2 text-center"
+          className="block lg:hidden mt-2 text-center"
         />
       </NavLink>
 
@@ -17,12 +17,7 @@ const LoginPage = () => {
         <LoginForm />
         <div className="relative md:w-[50%]">
           <NavLink to="/">
-            <img
-              className="hidden md:block md:ml-20"
-              width={"80%"}
-              src={Card}
-              alt=""
-            />
+            <img className="hidden lg:block " width={"80%"} src={Card} alt="" />
           </NavLink>
         </div>
       </div>

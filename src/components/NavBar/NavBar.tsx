@@ -42,12 +42,12 @@ const NavBar = ({ isMobile }: Props) => {
         ) : (
           <>
             <ul className="lg:flex lg:gap-20 lg:text-16">
-              <li className="menu-list">Courses</li>
-              <li className="menu-list">Sign up</li>
+              <li className="menu-list">Trang chủ</li>
+              <li className="menu-list">Membership</li>
               <NavLink to="signin">
-                <li className="menu-list">Sign in</li>
+                <li className="menu-list">Đăng nhập</li>
               </NavLink>
-              <li className="ml-28 menu-list">Contact</li>
+              <li className="ml-28 menu-list">Đăng kí</li>
             </ul>
           </>
         )}
@@ -55,12 +55,12 @@ const NavBar = ({ isMobile }: Props) => {
         {isOpenMenu && (
           <div className="bg-white z-1 leading-7 text-black py-4 px-8 absolute right-4 rounded-lg">
             <ul>
-              <li className="menu-list">Courses</li>
-              <li className="menu-list">Sign up</li>
+              <li className="menu-list">Trang chủ</li>
+              <li className="menu-list">Membership</li>
               <NavLink to="/signin">
-                <li className="menu-list">Sign in</li>
+                <li className="menu-list">Đăng nhập</li>
               </NavLink>
-              <li className="menu-list">Contact</li>
+              <li className="menu-list">Đăng kí</li>
             </ul>
           </div>
         )}

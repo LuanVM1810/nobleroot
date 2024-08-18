@@ -38,7 +38,7 @@ const LoginForm = () => {
             {showPassword === true ? (
               <PiEyeClosed
                 onClick={handleShowPassword}
-                className="absolute right-2"
+                className="absolute right-2 cursor-pointer"
                 color="white"
                 size={"24px"}
               />

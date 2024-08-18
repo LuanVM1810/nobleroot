@@ -1,4 +1,5 @@
 import Content from "../../components/Content/Content";
+import Courses from "../../components/Courses/Courses";
 import NavBar from "../../components/NavBar/NavBar";
 import Slogan from "../../components/Slogan/Slogan";
 
@@ -11,6 +12,7 @@ const LandingPage = ({ isMobile }: Props) => {
     <>
       <NavBar isMobile={isMobile} />
       <Slogan />
+      <Courses />
       <Content />
     </>
   );
