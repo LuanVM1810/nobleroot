@@ -1,6 +1,6 @@
 const Courses = () => {
   return (
-    <div className="mx-[70px] mb-[70px] flex flex-col gap-10 lg:flex-row">
+    <div className="mx-[50px] mb-[70px] flex flex-col gap-10 lg:flex-row">
       <div className="bg-purple-700 p-4 hover:translate-y-[-5%] transition-all duration-500 shadow-2xl rounded-2xl flex flex-col gap-4 items-center">
         <img
           src="https://cdn.corporatefinanceinstitute.com/assets/candlestick-patterns-1024x577.jpeg"
