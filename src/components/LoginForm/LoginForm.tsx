@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { PiEye } from "react-icons/pi";
 import { PiEyeClosed } from "react-icons/pi";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { MdOutlinePassword } from "react-icons/md";
 
 const LoginForm = () => {
   const [showPassword, setShowPassword] = useState<boolean>(false);
@@ -18,7 +20,10 @@ const LoginForm = () => {
       </div>
       <div className="flex flex-col mt-10 gap-10 ">
         <div className="flex flex-col gap-1 md:gap-2">
-          <label>Email</label>
+          <label className="flex gap-1 items-center font-semibold">
+            <MdOutlineMailOutline size={"24px"} />
+            Email
+          </label>
           <input
             type="email"
             id="email"
@@ -27,7 +32,10 @@ const LoginForm = () => {
           />
         </div>
         <div className="flex flex-col gap-1 md:gap-2">
-          <label>Password</label>
+          <label className="flex gap-1 items-center font-semibold">
+            <MdOutlinePassword size={"24px"} />
+            Password
+          </label>
           <div className="flex items-center relative">
             <input
               type={showPassword === true ? `text` : `password`}

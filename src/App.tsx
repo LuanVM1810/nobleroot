@@ -35,7 +35,7 @@ export default function App() {
     }
   }, [windowSize]);
   return (
-    <h1 className="font-montserrat overflowy-y-auto overflow-x-hidden text-white h-screen px-4 pt-2 pb-6 bg-gradient-to-b from-purple-900 to-purple-700 md:px-20">
+    <h1 className="font-montserrat overflowy-y-auto overflow-x-hidden text-white h-screen px-4 pt-2 pb-6 bg-gradient-to-b from-purple-900 to-purple-700 lg:px-20">
       <Routes>
         <Route path="/" element={<LandingPage isMobile={isMobile} />} />
         <Route path="/signin" element={<LoginPage />} />
