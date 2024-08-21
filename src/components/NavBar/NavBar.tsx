@@ -4,12 +4,33 @@ import { useEffect, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import { MdOutlineChevronRight } from "react-icons/md";
+import { IoIosArrowDown } from "react-icons/io";
+import ConnectWallet from "../ConnectWallet/ConnectWallet";
+import InstructList from "../InstructList/InstructList";
 
 type Props = {
   isMobile: boolean;
 };
 const NavBar = ({ isMobile }: Props) => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
+  const [isOpenConnectWallet, setIsOpenConnectWallet] = useState(false);
+  const [isOpenInstruct, setIsOpenInstruct] = useState(false);
+
+  const openConnectWallet = () => {
+    setIsOpenConnectWallet(true);
+  };
+
+  const closeConnectWallet = () => {
+    setIsOpenConnectWallet(false);
+  };
+
+  const openInstruct = () => {
+    setIsOpenInstruct(true);
+  };
+
+  const closeInstruct = () => {
+    setIsOpenInstruct(false);
+  };
 
   const openMenu = () => {
     setIsOpenMenu(!isOpenMenu);
@@ -48,13 +69,41 @@ const NavBar = ({ isMobile }: Props) => {
           />
         ) : (
           <>
-            <ul className="lg:flex lg:gap-20 lg:text-16">
+            <ul className="lg:flex gap-10 lg:items-center lg:text-16 font-semibold">
               <li className="menu-list">Trang chủ</li>
               <li className="menu-list">Membership</li>
               <NavLink to="signin">
                 <li className="menu-list">Đăng nhập</li>
               </NavLink>
-              <li className="ml-28 menu-list">Đăng kí</li>
+              <li className="menu-list">Đăng kí</li>
+              <li
+                onMouseOver={openInstruct}
+                onMouseLeave={closeInstruct}
+                className="menu-list flex relative"
+              >
+                Hướng dẫn
+                <IoIosArrowDown
+                  size={"24px"}
+                  className={`ml-2 ${
+                    isOpenInstruct && `rotate-180`
+                  } transition-all duration-300`}
+                />
+                {isOpenInstruct && <InstructList />}
+              </li>
+              <li
+                onMouseOver={openConnectWallet}
+                onMouseLeave={closeConnectWallet}
+                className="ml-20 relative flex items-center hover:shadow-md transition-all duration-300 hover:bg-white menu-list rounded-2xl border-2 py-2 px-6"
+              >
+                Connect Wallet
+                <IoIosArrowDown
+                  size={"24px"}
+                  className={`ml-2 ${
+                    isOpenConnectWallet && `rotate-180`
+                  } transition-all duration-300`}
+                />
+                {isOpenConnectWallet && <ConnectWallet />}
+              </li>
             </ul>
           </>
         )}
