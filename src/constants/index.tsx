@@ -15,3 +15,11 @@ export const contentInfo = [
     icon: <SiCoursera size={"24px"} />,
   },
 ];
+
+export const membershipContent = [
+  "Access to all premium crypto courses",
+  "Weekly live Q&A sessions with experts",
+  "Exclusive community forums",
+  "Priority support and personal consultation",
+  "Regular updates and new content",
+];
