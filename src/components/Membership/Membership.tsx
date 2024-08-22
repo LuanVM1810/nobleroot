@@ -27,17 +27,17 @@ const Membership = () => {
         <div className="flex flex-col gap-10">
           <p className="text-26 font-bold uppercase">Select your plan</p>
           <div className="flex flex-col gap-10 lg:flex-row">
-            <div className="bg-gradient-to-b from-purple-900 to-purple-500 lg:w-[33%] hover:translate-y-[-10px] transition-all duration-300 py-4 rounded-2xl shadow-md text-white">
+            <div className="bg-gradient-to-b from-purple-900 via-purple-700 to-purple-500 lg:w-[33%] hover:translate-y-[-10px] transition-all duration-300 py-4 rounded-2xl shadow-md text-white">
               <p className="text-24 font-light">Weekly</p>
               <p className="text-32 font-extrabold">$12/week</p>
               <button className="btn">Join now</button>
             </div>
-            <div className="bg-gradient-to-b from-purple-900 to-purple-500 lg:w-[33%] hover:translate-y-[-10px] transition-all duration-300 py-4 rounded-2xl shadow-md text-white">
+            <div className="bg-gradient-to-b from-purple-900 via-purple-700 to-purple-500 lg:w-[33%] hover:translate-y-[-10px] transition-all duration-300 py-4 rounded-2xl shadow-md text-white">
               <p className="text-24 font-light">Monthly</p>
               <p className="text-32 font-extrabold">$35/month</p>
               <button className="btn">Join now</button>
             </div>
-            <div className="bg-gradient-to-b from-purple-900 to-purple-500 lg:w-[33%] hover:translate-y-[-10px] transition-all duration-300 py-4 rounded-2xl shadow-md text-white">
+            <div className="bg-gradient-to-b from-purple-900 via-purple-700 to-purple-500 lg:w-[33%] hover:translate-y-[-10px] transition-all duration-300 py-4 rounded-2xl shadow-md text-white">
               <p className="text-24 font-light">Yearly</p>
               <p className="text-32 font-extrabold">$300/year</p>
               <button className="btn">Join now</button>
