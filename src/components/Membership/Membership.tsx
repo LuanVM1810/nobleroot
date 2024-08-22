@@ -6,7 +6,7 @@ const Membership = () => {
     <div>
       <div className="flex my-20 text-center gap-6 flex-col px-4 py-6 bg-gradient-to-r from-purple-900 via-purple-700 to-purple-500 mx-[50px] shadow-md rounded-2xl">
         <div className="space-y-4">
-          <p className="text-26 font-bold lg:text-32">
+          <p className="text-26 font-bold lg:text-32 uppercase">
             Join Nobleroot membership
           </p>
           <p className="font-semibold lg:text-20">
@@ -25,19 +25,19 @@ const Membership = () => {
         </div>
         <div className="w-[100%] bg-white h-1 rounded-full"></div>
         <div className="flex flex-col gap-10">
-          <p className="text-26 font-bold">Select your plan</p>
+          <p className="text-26 font-bold uppercase">Select your plan</p>
           <div className="flex flex-col gap-10 lg:flex-row">
-            <div className="bg-purple-700 lg:w-[33%] hover:translate-y-[-10px] transition-all duration-300 py-4 rounded-2xl shadow-md text-white">
+            <div className="bg-gradient-to-b from-purple-900 to-purple-500 lg:w-[33%] hover:translate-y-[-10px] transition-all duration-300 py-4 rounded-2xl shadow-md text-white">
               <p className="text-24 font-light">Weekly</p>
               <p className="text-32 font-extrabold">$12/week</p>
               <button className="btn">Join now</button>
             </div>
-            <div className="bg-purple-700 lg:w-[33%] hover:translate-y-[-10px] transition-all duration-300 py-4 rounded-2xl shadow-md text-white">
+            <div className="bg-gradient-to-b from-purple-900 to-purple-500 lg:w-[33%] hover:translate-y-[-10px] transition-all duration-300 py-4 rounded-2xl shadow-md text-white">
               <p className="text-24 font-light">Monthly</p>
-              <p className="text-32 font-extrabold">$35/week</p>
+              <p className="text-32 font-extrabold">$35/month</p>
               <button className="btn">Join now</button>
             </div>
-            <div className="bg-purple-700 lg:w-[33%] hover:translate-y-[-10px] transition-all duration-300 py-4 rounded-2xl shadow-md text-white">
+            <div className="bg-gradient-to-b from-purple-900 to-purple-500 lg:w-[33%] hover:translate-y-[-10px] transition-all duration-300 py-4 rounded-2xl shadow-md text-white">
               <p className="text-24 font-light">Yearly</p>
               <p className="text-32 font-extrabold">$300/year</p>
               <button className="btn">Join now</button>
